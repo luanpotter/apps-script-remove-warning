@@ -1,0 +1,12 @@
+{
+	"name": "Google Apps Scripts Remove Warning",
+	"version": "1.0",
+	"description": "Webpages deployed via Google App Scripts now include an annoying message on top of an iframe. This plugin removes that message for every script.google.com page.",
+	"content_scripts": [{
+		"matches": ["*://script.google.com/*"],
+		"js": ["src/main.js"],
+		"run_at": "document_end",
+		"all_frames": true
+	}],
+	"manifest_version": 2
+}
