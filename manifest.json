@@ -5,8 +5,7 @@
 	"content_scripts": [{
 		"matches": ["*://script.google.com/*"],
 		"js": ["src/main.js"],
-		"run_at": "document_end",
-		"all_frames": true
+		"run_at": "document_end"
 	}],
 	"manifest_version": 2
 }
